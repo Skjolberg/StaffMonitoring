@@ -1,0 +1,17 @@
+name: ${name}
+main: ${group}.bukkit.StaffMonitoring
+version: ${version}
+author: ${author}
+api-version: ${minecraftVersion}
+description: ${description}
+softdepend: []
+
+permissions:
+  smb.admin:
+    description: Allows all admin permissions
+    default: op
+    children:
+      sbr.use: true
+  smb.use:
+    description: Permissions for players
+    default: true
